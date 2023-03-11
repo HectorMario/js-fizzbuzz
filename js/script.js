@@ -1,14 +1,23 @@
+const cuadri = document.querySelector(".container")
 for (i = 1; i <= 100; i++) {
+    let fizz;
+    let color;
     if(i % 3 === 0 ) {
         if (i % 15 === 0) {
-            document.write("FizzBuzz <br>");
+           fizz = "FizzBuzz";
+           color = "red";
         }else{
-            document.write("fizz <br>")
+            fizz = "Fizz";
+            color = "yellow";
         }
     } else if (i % 5 === 0){
-        document.write("buzz <br>")
+        fizz = "Buzz";
+        color = "green";
     } else {
-        document.write(i + "<br>")
+        fizz = i
+        color = "blue"
     }
+    console.log(i, fizz);
+    cuadri.innerHTML += `<div class="ms-container ${color}"><strong>${fizz}</strong></div>`;
     
 }

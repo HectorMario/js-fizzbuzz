@@ -1,0 +1,26 @@
+.ms-background{
+    background-color: #083B4C;
+    
+}
+
+.ms-container{
+    width: calc(100% / 7 - (140px / 7) );
+    padding: 40px 0;
+    margin: 10px;
+}
+
+.red{
+    background-color: #F0466F;
+}
+
+.blue{
+    background-color: #1389B2;
+}
+
+.yellow{
+    background-color: #FFD166;
+}
+
+.green{
+    background-color: #0BD6A1;
+}
